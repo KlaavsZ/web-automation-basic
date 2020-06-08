@@ -75,7 +75,7 @@ Feature: Basic Actions
     | Deutsch  | Bestellungen & Zahlung | Datenschutz & Sicherheit | Abmelden    |
     |  Česky   | Objednávky & Platby    | Soukromí & Bezpečnost    | Odhlásit se |
 
-  @HOME_WORK @IMPLEMENT_THIS
+  @HOME_WORK @IMPLEMENT_THIS 
   Scenario: Change password
     When I click "Account button"
     And  I click "Login button"
@@ -98,7 +98,7 @@ Feature: Basic Actions
       | Email    | demo            |
       | Password | easyPassword123 |
 
-  @HOME_WORK @IMPLEMENT_THIS
+  @HOME_WORK @IMPLEMENT_THIS 
   Scenario: Add new address
     When I click "Account button"
     And  I click "Login button"
@@ -106,11 +106,12 @@ Feature: Basic Actions
       | Email    | demo |
       | Password | demo |
     When I click "Add to basket"
-    And  I click "Checkout"
-    And  I click "Add new address"
+    And  I click "Shopping cart button"
+    And  I click "Checkout button"
+    And  I click "Add address"
     And  I set "Country" to "Latvia"
     And  I set "Name" to "Freeman"
-    And  I set "Mobile Number" to "+37120202020"
+    And  I set "Mobile Number" to "20202020"
     And  I set "ZIP code" to "LV-3201"
     And  I set "Address" to "Random Address 25-395"
     And  I set "City" to "Ventspils"

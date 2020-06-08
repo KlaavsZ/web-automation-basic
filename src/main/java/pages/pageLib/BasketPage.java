@@ -7,6 +7,7 @@ public class BasketPage extends HomePageLoggedIn {
   // Constructor
   public BasketPage(){
     addElement("checkoutButton", "button[id='checkoutButton']");
+    addElement("", "");
   }
   // Methods
   @Override
